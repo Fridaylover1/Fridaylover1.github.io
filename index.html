@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Kalam" rel="stylesheet">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style type="text/css" media="screen">
+
+
+      * {
+  box-sizing: border-box;
+}
+
+h4 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin-top: 50px;
+  opacity:0.8;
+  font-weight: 100;
+  margin-bottom: 70px;
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #323a45;
+  transition: all .3s;
+  font-family:sans-serif;
+}
+
+a:hover {
+  color: #ddd
+  text-decoration: none;
+  background-color: rgba(255, 255, 255,);
+  opacity:0.5;
+}
+body {
+  margin: 0;
+  ;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+} */
+.top-wrapper {
+  padding: 180px 0 300px 0;
+  background-image: url("/Users/ryosuke/Pictures/F71CB17D-14AB-4C7E-8B68-8E5BB67C061C.JPG") ;
+  background-size: cover;
+  color: white;
+  text-align: left;
+}
+
+.top-wrapper h1 {
+  opacity:0;
+}
+.top-wrapper p {
+  opacity: 1.0;
+  font-size: 75px;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+  font-family: 'Caveat', cursive;
+  font-weight: bold;
+}
+
+.top-wrapper h2 {
+  opacity: 1.0;
+  font-size: 75px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-family: 'Caveat', cursive;
+  font-weight: bold;
+}
+
+.top-wrapper h3 {
+  font-size:25px;
+  font-family: arial;
+  opacity:0.9;
+  font-weight: 100;
+}
+
+
+
+header {
+  height: 40px;
+  width: 100%;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+  opacity:1.0;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+header {
+  height: 35px;
+  position: fixed;
+  top:0;
+  left: 0;
+  right:0;
+  background-color: #fff
+  line-height:35px;
+  z-index: 10;
+
+}
+
+.header-left {
+  float: left;
+}
+
+.header-left a {
+  line-height: 40px;
+  padding:0px 25px;
+  color: #333;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+  font-family:sans-serif;
+  font-weight: 200;
+}
+
+.header-left a:hover {
+  background-color: rgba(255, 255, 255,);
+  opacity:0.5;
+}
+
+/*.header-right {
+  float:right;
+  transition: all 0.5s;
+}
+
+.header-right a{
+  line-height: 40px;
+  color:#b3aeb5;
+  display: inline-block;
+  width:30px;
+  height:30px;
+}
+
+.header-right a:hover{
+  opacity:0.5;
+} */
+
+/* menu-iconのCSSを貼り付けてください */
+.menu-icon {
+  color: white;
+  float: left;
+  font-size: 25px;
+  padding: 21px 0;
+  /* displayをnoneに指定してください */
+  display: none;
+}
+
+.about-section {
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.about-section h3 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-top: 50px;
+  opacity:0.8;
+  font-weight: 100;
+  font-family: sans-serif;
+}
+
+.about-section h5 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-top: 50px;
+  opacity:0.8;
+  font-weight: 100;
+  margin-bottom: 70px;
+  font-family: sans-serif;
+}
+/*-------ここからblog-----------*/
+.blog-section {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.blog-section a {
+  font-family:sans-serif;
+  font-weight: 400;
+}
+
+
+.column-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  margin: 0 15px 30px;
+  padding: 7px 7px 27px;
+}
+
+.column-image {
+  width: 100%;
+  height: 238px;
+  background-position: center;
+  background-size: 100% auto;
+  transition: all .3s;
+}
+
+.column-title {
+  display: block;
+  margin-top: 17px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/*-------  ここまでcolumn  --------*/
+
+/*-------  ここからcontact  --------*/
+.contact-section {
+  background: url("https://s3.amazonaws.com/vf-images/wp-content/uploads/2014/05/love-vinyl_sub.png");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.contact-section-inner {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 70px;
+}
+
+.contact-section h5 {
+  color: white;
+  opacity: 0.8;
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin-top: 50px;
+  font-weight: 200;
+  padding-bottom: 60px;
+  padding-top: 40px;
+  font-family: sans-serif;
+}
+
+
+input[type="text"], textarea {
+  margin: 0;
+  vertical-align: middle;
+  background: rgba(250, 250, 250, 0.08);
+  border: none;
+  width: 100%;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius :0;
+  box-shadow: none;
+  transition: all .3s;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.contact-form {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+}
+
+.btn-contact {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  background: #3399CC;
+  border: 1px solid #3399CC;
+  color: white;
+  box-shadow: inset 0 1px 0 #3399CC;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  transition: all .3s;
+  margin: 40px 0;
+  padding: 8px 40px;
+  opacity:0.9;
+}
+
+/*-------  ここまでcontact  --------*/
+
+/*-------  ここからsocial  --------*/
+.social-section {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.social-icon {
+  font-size: 36px;
+  padding: 5px;
+  transition: all .3s;
+  color: #222;
+}
+
+/*-------  ここまでsocial  --------*/
+
+
+
+/*footer {
+  text-align: center;
+  padding: 40px 0;
+  background: #222;
+}*/
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+
+        <span class="fa fa-bars menu-icon"></span>
+
+        <div class="header-left">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#blog" class="login">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <!--<div class="header-right">
+          <a href="#" class="icon facebook"><span class="fa fa-facebook"></span></a>
+          <a href="#" class="icon linkedin"><span class="fa fa-linkedin"></span></a>
+        </div>-->
+
+      </div>
+    </header>
+    <div id="home" class="top-wrapper">
+      <div class="container">
+        <h1>a</h1>
+        <h1>a</h1>
+        <p>Hello,</p>
+        <h2>I'm Ryosuke Nakamachi.</h2>
+        <h3>Imagination means nothing without doing.</h3>
+        <h1>a</h1>
+        <h1>a</h1>
+      </div>
+    </div>
+
+    <div id="about" class="about-section">
+      <div class="container">
+        <div class="section-title">
+          <h4>About</h4>
+          <h3>School of Commerce in WASEDA University in Japan(Studying Marketing, International Marketing Management, Cultural Management).</h3>
+          <h5>Studying International Business in SanFrancisco State University.</h5>
+          <h1></h1>
+          <h5>Passionate in Startups, Interaction, Projection, Art, Technology, Design, UX, Lifestyles, Music,</h5>
+        </div>
+      </div>
+    </div>
+
+    <div id="blog" class="blog-section">
+      <div class="container">
+        <div class="section-title">
+          <h4>Blog</h4>
+        </div>
+        <div class="wrapper-outer">
+          <div class="column-box">
+            <a href="#" class="caption">
+              <div class="column-image" style="background-image: url(https://assets3.thrillist.com/v1/image/2711571/size/tmg-gift_guide_variable.jpg)"></div>
+            </a>
+            <a href="https://medium.com/@ryosukenakamachi/current-trend-in-consumer-lifestyles-5d8a5b0e8e94" class="column-title">Current Trend in Consumer lifestyles (JP)</a>
+            <div>2/18/2018</div>
+          </div>
+          <div class="column-box">
+            <a href="#" class="caption">
+              <div class="column-image" style="background-image: url(https://qph.fs.quoracdn.net/main-qimg-6093be65a5d577e3563d08b86941ca6e)"></div>
+            </a>
+            <a href="https://medium.com/@ryosukenakamachi/what-is-design-why-design-d000f9b589d4" class="column-title">What is Design?/Why Design? (JP)</a>
+            <div>2/21/2018</div>
+          </div>
+          <div class="column-box">
+            <a href="#">
+              <div class="column-image" style="background-image: url(https://www.teamlab.art/images/pc-m/5348)"></div>
+            </a>
+            <a href="https://medium.com/@ryosukenakamachi/changes-in-the-relationship-between-humans-and-things-borderless-interactive-dfbc7664c430" class="column-title">Changes in the Relationship between Humans and Things -borderless & Interactive- (EN)</a>
+            <div>3/01/2018</div>
+          </div>
+          <div class="column-box">
+            <a href="#">
+              <div class="column-image" style="background-image: url(http://artenergy.info/wp-content/uploads/2015/07/flowe-andcorpseglitch2-.jpg)"></div>
+            </a>
+            <a href="https://medium.com/@ryosukenakamachi/japanese-culture-and-technology-77e47e68648b" class="column-title">Japanese Culture and Technology (JP)</a>
+            <div>3/8/2018</div>
+          </div>
+          <!--<div class="column-box">
+            <a href="#">
+              <div class="column-image" style="background-image: url(https://www.designboom.com/wp-content/uploads/2016/07/teamlab-dmm-planets-art-tokyo-digital-art-exhibition-designboom-1800.jpg)"></div>
+            </a>
+            <a href="#" class="column-title">Art + Technology</a>
+            <div></div>
+          </div>
+          <div class="column-box">
+            <a href="#">
+              <div class="column-image" style="background-image: url(http://www.spacetechexpo.com/assets/images/news/space.jpg)"></div>
+            </a>
+            <a href="#" class="column-title">The Future of Space Startups</a>
+            <div></div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>-->
+
+    <div id="contact" class="contact-section">
+      <div class="contact-section-inner">
+        <div class="container">
+          <div class="section-title">
+            <h5>Contact</h5>
+          </div>
+          <div class="contact-form">
+            <form>
+              <input type="text" name="email" placeholder="Email" class="contact-email">
+              <input type="text" name="subject" placeholder="Subject" class="contact-subject">
+              <textarea name="message" class="form-control" placeholder="Message"></textarea>
+              <button type="submit" class="btn btn-contact">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-section">
+      <div class="container">
+        <div class="sns">
+          <a href="https://www.facebook.com/profile.php?id=100010450062580"  class="social-icon" target='_blank'>
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ryosuke-nakamachi-ba5a07121/" class="social-icon" target='_blank'>
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
